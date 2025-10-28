@@ -9,40 +9,40 @@
 
 **🇺🇸 English | [🇪🇸 Español](README.es.md)**
 
-## 🎯 Project Overview
+## Project Overview
 
 Complete inventory management system built with **React** and **Supabase**, designed to handle multiple companies with advanced security and performance optimizations. This project demonstrates skills in modern full-stack development, scalable architecture, and web application optimization.
 
-## 🚀 Key Features
+## Key Features
 
-### 🔐 **Multi-Tenant Security**
+### **Multi-Tenant Security**
 - **Row Level Security (RLS)** implemented in Supabase
 - Complete data isolation per company
 - Robust authentication system with session management
 - Granular security policies
 
-### ⚡ **Performance Optimizations**
+### **Performance Optimizations**
 - **70-80% reduction** in database egress
 - Smart caching with React Query
 - Optimized pagination (50 → 25 items per page)
 - Advanced debouncing (800ms) in searches
 - Virtual scrolling for large lists
 
-### 🏗️ **Modern Architecture**
+### **Modern Architecture**
 - **React Hooks** and Context API
 - **Custom hooks** for reusable logic
 - Modular and reusable components
 - Centralized global state
 - Robust error handling
 
-### 🎨 **User Experience**
+### **User Experience**
 - **Complete responsive design**
 - Intuitive and modern interface
 - Real-time updates
 - Optimized loading states
 - User-friendly error handling
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Technology | Version | Purpose |
 |------------|---------|---------|
@@ -53,7 +53,7 @@ Complete inventory management system built with **React** and **Supabase**, desi
 | **JavaScript ES6+** | Latest | Programming language |
 | **CSS Modules** | - | Styling approach |
 
-## 📊 Project Metrics
+## Project Metrics
 
 - **📝 Lines of code:** ~15,000+
 - **🧩 React components:** ~50+
@@ -62,7 +62,7 @@ Complete inventory management system built with **React** and **Supabase**, desi
 - **📱 Responsive breakpoints:** 5
 - **🔧 Custom hooks:** 8
 
-## 🏆 Implemented Use Cases
+## Implemented Use Cases
 
 ### 1. **Real-time Inventory Management**
 ```javascript
@@ -107,7 +107,7 @@ const useOptimizedProducts = (companyId, filters) => {
 };
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -128,28 +128,28 @@ server/
 └── middleware/          # Custom middleware
 ```
 
-## ⚡ Implemented Optimizations
+## Implemented Optimizations
 
-### 🎯 **Cache Optimization (High Impact)**
+### **Cache Optimization (High Impact)**
 - **React Query** with optimized cache times
 - Reduction of unnecessary refetches
 - Smart caching by company context
 
-### 🔍 **Query Optimization (High Impact)**
+### **Query Optimization (High Impact)**
 - Elimination of unnecessary fields in SELECT
 - 20-30% reduction in response payload
 - Optimized database indexes
 
-### 📄 **Pagination Optimization (Medium Impact)**
+### **Pagination Optimization (Medium Impact)**
 - 50% reduction in initially transferred data
 - Lazy loading pagination
 - Virtual scrolling for large lists
 
-### ⌨️ **Debounce Optimization (Medium Impact)**
+### **Debounce Optimization (Medium Impact)**
 - 800ms debounce in searches
 - Significant reduction of requests during typing
 
-## 🚀 Installation and Setup
+## Installation and Setup
 
 ### Prerequisites
 - Node.js 16+
@@ -179,14 +179,14 @@ npm start
 -- Migration scripts included in /server/migrations/
 ```
 
-## 🧪 Testing and Quality
+## Testing and Quality
 
 - **ESLint** configured for code quality
 - **Prettier** for consistent formatting
 - **React DevTools** for debugging
 - Extensive manual testing on multiple devices
 
-## 📈 Performance Results
+## Performance Results
 
 ### Before vs After Optimizations
 
@@ -197,7 +197,7 @@ npm start
 | **Requests per search** | 8-12 | 2-3 | 75% ↓ |
 | **Bundle size** | 2.1MB | 1.4MB | 33% ↓ |
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - [ ] TypeScript implementation
 - [ ] Automated testing (Jest + RTL)
@@ -206,7 +206,7 @@ npm start
 - [ ] Internationalization (i18n)
 - [ ] Docker containerization
 
-## 👨‍💻 About the Developer
+## About the Developer
 
 This project was developed as a demonstration of skills in:
 
@@ -217,7 +217,7 @@ This project was developed as a demonstration of skills in:
 - ✅ **Modern UX/UI** and responsive design
 - ✅ **Full-stack development** with Supabase
 
-## 📞 Contact
+## Contact
 
 Interested in discussing opportunities? Let's connect!
 
