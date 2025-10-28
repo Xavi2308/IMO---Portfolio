@@ -1,0 +1,10 @@
+{
+  "name": "woocommerce-sync",
+  "version": "1.0.0",
+  "description": "WooCommerce synchronization service",
+  "main": "index.js",
+  "dependencies": {
+    "@woocommerce/woocommerce-rest-api": "^1.0.2",
+    "node-cron": "^3.0.2"
+  }
+}

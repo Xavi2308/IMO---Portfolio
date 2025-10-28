@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMO</title>
+  <!-- Paleta y gradiente por defecto para SSR y primer render -->
+  <style>
+    :root {
+      --theme-color: #ceb5b7;
+      --theme-main: #ceb5b7;
+      --theme-c1: #222222;
+      --theme-c2: #574143;
+      --theme-c3: #bfa5a7;
+      --theme-c4: #99c3be;
+      --theme-c5: #ffffff;
+      --theme-matching-gradient: linear-gradient(90deg, #222222, #574143, #ceb5b7, #bfa5a7, #99c3be, #ffffff);
+      --theme-color-hover: rgba(101, 92, 83, 0.8);
+      --theme-secondary-1: #bfa5a7;
+      --theme-secondary-2: #99c3be;
+      --theme-secondary-3: #ffffff;
+      --theme-secondary-4: #574143;
+    }
+    body {
+      background: var(--theme-matching-gradient);
+      color: #222;
+      min-height: 100vh;
+      margin: 0;
+      font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    }
+  </style>
+  
+  <link rel="icon" type="image/svg+xml" href="logo/logo-IMO.svg" />
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>
