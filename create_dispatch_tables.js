@@ -1,7 +1,7 @@
 const { createClient } = require('@supabase/supabase-js');
 
 const supabase = createClient(
-  'https://gldtowkpswpgnccdqeyr.supabase.co',
+  'https://your-project.supabase.co',
   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdsdHRvd2twc3dwZ25jY2RxZXlyIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTczMDkxMzc2NiwiZXhwIjoyMDQ2NDg5NzY2fQ.Ts8E2SFJ_3OvepJqJ_GNkgz1A-HGqw2iP3Cr5fhD1kI'
 );
 

@@ -1,7 +1,7 @@
 const { createClient } = require('@supabase/supabase-js');
 
 // Hardcoded for quick check - will read from browser network tab
-const supabaseUrl = 'https://cqyuujbpvwbuvtjrwidn.supabase.co';
+const supabaseUrl = 'https://your-project.supabase.co';
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNxeXV1amJwdndidXZ0anJ3aWRuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzQ0NjQyNjUsImV4cCI6MjA1MDA0MDI2NX0.1pKYK3rYfDBFOsLZLNnOXe-VhCJ8BK31Rf1L-P2PZnU';
 
 const supabase = createClient(supabaseUrl, supabaseKey);
