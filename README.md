@@ -1,49 +1,51 @@
 # 🏢 Inventory Management System - Portfolio Demo
 
-> **Sistema de Gestión de Inventario Multi-Empresa con Optimizaciones Avanzadas**
+> **Multi-Tenant Inventory Management System with Advanced Performance Optimizations**
 
 [![React](https://img.shields.io/badge/React-18.x-blue.svg)](https://reactjs.org/)
 [![Supabase](https://img.shields.io/badge/Supabase-Latest-green.svg)](https://supabase.com/)
-[![Performance](https://img.shields.io/badge/Performance-Optimized-brightgreen.svg)](#optimizaciones)
-[![Multi-tenant](https://img.shields.io/badge/Architecture-Multi--tenant-purple.svg)](#arquitectura)
+[![Performance](https://img.shields.io/badge/Performance-Optimized-brightgreen.svg)](#optimizations)
+[![Multi-tenant](https://img.shields.io/badge/Architecture-Multi--tenant-purple.svg)](#architecture)
 
-## 🎯 Descripción del Proyecto
+**🇺🇸 English | [🇪🇸 Español](README.es.md)**
 
-Sistema completo de gestión de inventario desarrollado con **React** y **Supabase**, diseñado para manejar múltiples empresas con seguridad avanzada y optimizaciones de performance. Este proyecto demuestra habilidades en desarrollo full-stack moderno, arquitectura escalable y optimización de aplicaciones web.
+## 🎯 Project Overview
 
-## 🚀 Características Principales
+Complete inventory management system built with **React** and **Supabase**, designed to handle multiple companies with advanced security and performance optimizations. This project demonstrates skills in modern full-stack development, scalable architecture, and web application optimization.
 
-### 🔐 **Seguridad Multi-Tenant**
-- **Row Level Security (RLS)** implementado en Supabase
-- Aislamiento completo de datos por empresa
-- Sistema de autenticación robusto con manejo de sesiones
-- Políticas de seguridad granulares
+## 🚀 Key Features
 
-### ⚡ **Optimizaciones de Performance**
-- **70-80% reducción en egress** de base de datos
-- Cache inteligente con React Query
-- Paginación optimizada (50 → 25 elementos por página)
-- Debouncing avanzado (800ms) en búsquedas
-- Virtual scrolling para listas grandes
+### 🔐 **Multi-Tenant Security**
+- **Row Level Security (RLS)** implemented in Supabase
+- Complete data isolation per company
+- Robust authentication system with session management
+- Granular security policies
 
-### 🏗️ **Arquitectura Moderna**
-- **React Hooks** y Context API
-- **Custom hooks** para lógica reutilizable
-- Componentes modulares y reutilizables
-- Estado global centralizado
-- Manejo de errores robusto
+### ⚡ **Performance Optimizations**
+- **70-80% reduction** in database egress
+- Smart caching with React Query
+- Optimized pagination (50 → 25 items per page)
+- Advanced debouncing (800ms) in searches
+- Virtual scrolling for large lists
 
-### 🎨 **Experiencia de Usuario**
-- **Responsive design** completo
-- Interfaz intuitiva y moderna
-- Actualizaciones en tiempo real
-- Estados de carga optimizados
-- Manejo de errores user-friendly
+### 🏗️ **Modern Architecture**
+- **React Hooks** and Context API
+- **Custom hooks** for reusable logic
+- Modular and reusable components
+- Centralized global state
+- Robust error handling
 
-## 🛠️ Stack Tecnológico
+### 🎨 **User Experience**
+- **Complete responsive design**
+- Intuitive and modern interface
+- Real-time updates
+- Optimized loading states
+- User-friendly error handling
 
-| Tecnología | Versión | Propósito |
-|------------|---------|-----------|
+## 🛠️ Tech Stack
+
+| Technology | Version | Purpose |
+|------------|---------|---------|
 | **React** | 18.x | Frontend framework |
 | **Supabase** | Latest | Backend as a Service |
 | **React Query** | 4.x | Server state management |
@@ -51,20 +53,20 @@ Sistema completo de gestión de inventario desarrollado con **React** y **Supaba
 | **JavaScript ES6+** | Latest | Programming language |
 | **CSS Modules** | - | Styling approach |
 
-## 📊 Métricas del Proyecto
+## 📊 Project Metrics
 
-- **📝 Líneas de código:** ~15,000+
-- **🧩 Componentes React:** ~50+
-- **⚡ Optimizaciones:** 12 implementadas
+- **📝 Lines of code:** ~15,000+
+- **🧩 React components:** ~50+
+- **⚡ Optimizations:** 12 implemented
 - **🎯 Performance score:** 95/100
 - **📱 Responsive breakpoints:** 5
 - **🔧 Custom hooks:** 8
 
-## 🏆 Casos de Uso Implementados
+## 🏆 Implemented Use Cases
 
-### 1. **Gestión de Inventario en Tiempo Real**
+### 1. **Real-time Inventory Management**
 ```javascript
-// Ejemplo: Hook personalizado para inventario
+// Example: Custom hook for inventory
 const useInventoryRealtime = (companyId) => {
   const [inventory, setInventory] = useState([]);
   
@@ -84,164 +86,145 @@ const useInventoryRealtime = (companyId) => {
 };
 ```
 
-### 2. **Sistema Multi-Tenant con RLS**
+### 2. **Multi-Tenant System with RLS**
 ```sql
--- Ejemplo: Política de seguridad implementada
+-- Example: Implemented security policy
 CREATE POLICY "company_isolation_policy" ON public.products
   FOR ALL USING (company_id = auth.jwt() ->> 'company_id');
 ```
 
-### 3. **Optimización de Queries**
+### 3. **Query Optimization**
 ```javascript
-// Ejemplo: Query optimizada con cache
+// Example: Optimized query with cache
 const useOptimizedProducts = (companyId, filters) => {
   return useQuery({
     queryKey: ['products', companyId, filters],
     queryFn: () => getProducts(companyId, filters),
-    staleTime: 5 * 60 * 1000, // 5 minutos
-    cacheTime: 15 * 60 * 1000, // 15 minutos
+    staleTime: 5 * 60 * 1000, // 5 minutes
+    cacheTime: 15 * 60 * 1000, // 15 minutes
     enabled: !!companyId
   });
 };
 ```
 
-## 🎬 Demo en Vivo
-
-🔗 **[Ver Demo](https://imo-portfolio-demo.vercel.app/)** *(Datos ficticios)*
-
-**Credenciales de prueba:**
-- Usuario: `demo@company.com`
-- Contraseña: `demo123`
-
-## 📁 Estructura del Proyecto
+## 📁 Project Structure
 
 ```
 src/
-├── components/           # Componentes React reutilizables
-│   ├── Auth/            # Sistema de autenticación
-│   ├── Inventory/       # Gestión de inventario
-│   ├── Users/           # Administración de usuarios
-│   └── UI/              # Componentes de interfaz
+├── components/           # Reusable React components
+│   ├── Auth/            # Authentication system
+│   ├── Inventory/       # Inventory management
+│   ├── Users/           # User administration
+│   └── UI/              # Interface components
 ├── contexts/            # React Context providers
 ├── hooks/               # Custom hooks
-├── utils/               # Funciones utilitarias
-├── optimizations/       # Mejoras de performance
-└── styles/              # Estilos CSS
+├── utils/               # Utility functions
+├── optimizations/       # Performance improvements
+└── styles/              # CSS styles
 
 server/
-├── api/                 # Endpoints de API
-├── migrations/          # Migraciones de BD
-└── middleware/          # Middleware personalizado
+├── api/                 # API endpoints
+├── migrations/          # Database migrations
+└── middleware/          # Custom middleware
 ```
 
-## ⚡ Optimizaciones Implementadas
+## ⚡ Implemented Optimizations
 
-### 🎯 **Cache Optimization (Alto Impacto)**
-- **React Query** con tiempos de cache optimizados
-- Reducción de refetches innecesarios
-- Cache inteligente por contexto de empresa
+### 🎯 **Cache Optimization (High Impact)**
+- **React Query** with optimized cache times
+- Reduction of unnecessary refetches
+- Smart caching by company context
 
-### 🔍 **Query Optimization (Alto Impacto)**
-- Eliminación de campos innecesarios en SELECT
-- Reducción del 20-30% en payload de respuesta
-- Índices optimizados en base de datos
+### 🔍 **Query Optimization (High Impact)**
+- Elimination of unnecessary fields in SELECT
+- 20-30% reduction in response payload
+- Optimized database indexes
 
-### 📄 **Pagination Optimization (Medio Impacto)**
-- Reducción del 50% en datos transferidos inicialmente
-- Paginación lazy loading
-- Virtual scrolling para listas grandes
+### 📄 **Pagination Optimization (Medium Impact)**
+- 50% reduction in initially transferred data
+- Lazy loading pagination
+- Virtual scrolling for large lists
 
-### ⌨️ **Debounce Optimization (Medio Impacto)**
-- Debounce de 800ms en búsquedas
-- Reducción significativa de requests durante escritura
+### ⌨️ **Debounce Optimization (Medium Impact)**
+- 800ms debounce in searches
+- Significant reduction of requests during typing
 
-## 🚀 Instalación y Configuración
+## 🚀 Installation and Setup
 
-### Prerrequisitos
+### Prerequisites
 - Node.js 16+
-- npm o yarn
-- Cuenta de Supabase
+- npm or yarn
+- Supabase account
 
-### Setup Rápido
+### Quick Setup
 ```bash
-# Clonar repositorio
-git clone https://github.com/tu-usuario/imo-portfolio.git
+# Clone repository
+git clone https://github.com/Xavi2308/IMO---Portfolio.git
 cd imo-portfolio
 
-# Instalar dependencias
+# Install dependencies
 npm install
 
-# Configurar variables de entorno
+# Configure environment variables
 cp .env.example .env.local
-# Editar .env.local con tus credenciales de Supabase
+# Edit .env.local with your Supabase credentials
 
-# Ejecutar en desarrollo
+# Run in development
 npm start
 ```
 
-### Configuración de Base de Datos
+### Database Configuration
 ```sql
--- Ejecutar en Supabase SQL Editor
--- Scripts de migración incluidos en /server/migrations/
+-- Execute in Supabase SQL Editor
+-- Migration scripts included in /server/migrations/
 ```
 
-## 🎨 Capturas de Pantalla
+## 🧪 Testing and Quality
 
-### Dashboard Principal
-![Dashboard](docs/screenshots/dashboard.png)
+- **ESLint** configured for code quality
+- **Prettier** for consistent formatting
+- **React DevTools** for debugging
+- Extensive manual testing on multiple devices
 
-### Gestión de Inventario
-![Inventory](docs/screenshots/inventory.png)
+## 📈 Performance Results
 
-### Sistema de Usuarios
-![Users](docs/screenshots/users.png)
+### Before vs After Optimizations
 
-## 🧪 Testing y Calidad
+| Metric | Before | After | Improvement |
+|---------|-------|-------|-------------|
+| **DB Egress** | 100% | 30% | 70% ↓ |
+| **Load time** | 4.2s | 1.8s | 57% ↓ |
+| **Requests per search** | 8-12 | 2-3 | 75% ↓ |
+| **Bundle size** | 2.1MB | 1.4MB | 33% ↓ |
 
-- **ESLint** configurado para calidad de código
-- **Prettier** para formateo consistente
-- **React DevTools** para debugging
-- Testing manual extensivo en múltiples dispositivos
+## 🔮 Future Improvements
 
-## 📈 Resultados de Performance
-
-### Antes vs Después de Optimizaciones
-
-| Métrica | Antes | Después | Mejora |
-|---------|-------|---------|---------|
-| **Egress DB** | 100% | 30% | 70% ↓ |
-| **Tiempo de carga** | 4.2s | 1.8s | 57% ↓ |
-| **Requests por búsqueda** | 8-12 | 2-3 | 75% ↓ |
-| **Tamaño de bundle** | 2.1MB | 1.4MB | 33% ↓ |
-
-## 🔮 Próximas Mejoras
-
-- [ ] Implementación de TypeScript
-- [ ] Testing automatizado (Jest + RTL)
+- [ ] TypeScript implementation
+- [ ] Automated testing (Jest + RTL)
 - [ ] PWA capabilities
-- [ ] Offline-first con service workers
-- [ ] Internacionalización (i18n)
+- [ ] Offline-first with service workers
+- [ ] Internationalization (i18n)
 - [ ] Docker containerization
 
-## 👨‍💻 Sobre el Desarrollador
+## 👨‍💻 About the Developer
 
-Este proyecto fue desarrollado como demostración de habilidades en:
+This project was developed as a demonstration of skills in:
 
-- ✅ **React avanzado** y ecosystem moderno
-- ✅ **Arquitectura escalable** y patrones de diseño
-- ✅ **Optimización de performance** real
-- ✅ **Seguridad** y multi-tenancy
-- ✅ **UX/UI** moderno y responsive
-- ✅ **Full-stack development** con Supabase
+- ✅ **Advanced React** and modern ecosystem
+- ✅ **Scalable architecture** and design patterns
+- ✅ **Real performance optimization**
+- ✅ **Security** and multi-tenancy
+- ✅ **Modern UX/UI** and responsive design
+- ✅ **Full-stack development** with Supabase
 
-## 📞 Contacto
+## 📞 Contact
 
-¿Interesado en discutir oportunidades? ¡Conectemos!
+Interested in discussing opportunities? Let's connect!
 
-- 📧 Email: tu.email@ejemplo.com
-- 💼 LinkedIn: [tu-perfil-linkedin](https://linkedin.com/in/tu-perfil)
-- 🐙 GitHub: [tu-usuario](https://github.com/tu-usuario)
+- 📧 Email: luisexcivier@gmail.com
+- 💼 LinkedIn: [Xavier Ruidiaz](https://www.linkedin.com/in/xavier-ruidiaz-urieta-922175336/?locale=en_US)
+- 🐙 GitHub: [Xavi2308](https://github.com/Xavi2308)
 
 ---
 
-⭐ **Si este proyecto te resulta interesante, ¡dale una estrella!** ⭐
+⭐ **If you find this project interesting, give it a star!** ⭐
