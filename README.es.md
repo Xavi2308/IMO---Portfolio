@@ -9,40 +9,40 @@
 
 **[🇺🇸 English](README.md) | 🇪🇸 Español**
 
-## 🎯 Descripción del Proyecto
+##  Descripción del Proyecto
 
 Sistema completo de gestión de inventario desarrollado con **React** y **Supabase**, diseñado para manejar múltiples empresas con seguridad avanzada y optimizaciones de performance. Este proyecto demuestra habilidades en desarrollo full-stack moderno, arquitectura escalable y optimización de aplicaciones web.
 
-## 🚀 Características Principales
+##  Características Principales
 
-### 🔐 **Seguridad Multi-Tenant**
+###  **Seguridad Multi-Tenant**
 - **Row Level Security (RLS)** implementado en Supabase
 - Aislamiento completo de datos por empresa
 - Sistema de autenticación robusto con manejo de sesiones
 - Políticas de seguridad granulares
 
-### ⚡ **Optimizaciones de Performance**
+###  **Optimizaciones de Performance**
 - **70-80% reducción en egress** de base de datos
 - Cache inteligente con React Query
 - Paginación optimizada (50 → 25 elementos por página)
 - Debouncing avanzado (800ms) en búsquedas
 - Virtual scrolling para listas grandes
 
-### 🏗️ **Arquitectura Moderna**
+###  **Arquitectura Moderna**
 - **React Hooks** y Context API
 - **Custom hooks** para lógica reutilizable
 - Componentes modulares y reutilizables
 - Estado global centralizado
 - Manejo de errores robusto
 
-### 🎨 **Experiencia de Usuario**
+###  **Experiencia de Usuario**
 - **Responsive design** completo
 - Interfaz intuitiva y moderna
 - Actualizaciones en tiempo real
 - Estados de carga optimizados
 - Manejo de errores user-friendly
 
-## 🛠️ Stack Tecnológico
+##  Stack Tecnológico
 
 | Tecnología | Versión | Propósito |
 |------------|---------|-----------|
@@ -53,7 +53,7 @@ Sistema completo de gestión de inventario desarrollado con **React** y **Supaba
 | **JavaScript ES6+** | Latest | Programming language |
 | **CSS Modules** | - | Styling approach |
 
-## 📊 Métricas del Proyecto
+##  Métricas del Proyecto
 
 - **📝 Líneas de código:** ~15,000+
 - **🧩 Componentes React:** ~50+
@@ -62,7 +62,7 @@ Sistema completo de gestión de inventario desarrollado con **React** y **Supaba
 - **📱 Responsive breakpoints:** 5
 - **🔧 Custom hooks:** 8
 
-## 🏆 Casos de Uso Implementados
+##  Casos de Uso Implementados
 
 ### 1. **Gestión de Inventario en Tiempo Real**
 ```javascript
@@ -107,7 +107,7 @@ const useOptimizedProducts = (companyId, filters) => {
 };
 ```
 
-## 📁 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```
 src/
@@ -128,7 +128,7 @@ server/
 └── middleware/          # Middleware personalizado
 ```
 
-## ⚡ Optimizaciones Implementadas
+##  Optimizaciones Implementadas
 
 ### 🎯 **Cache Optimization (Alto Impacto)**
 - **React Query** con tiempos de cache optimizados
@@ -179,14 +179,14 @@ npm start
 -- Scripts de migración incluidos en /server/migrations/
 ```
 
-## 🧪 Testing y Calidad
+##  Testing y Calidad
 
 - **ESLint** configurado para calidad de código
 - **Prettier** para formateo consistente
 - **React DevTools** para debugging
 - Testing manual extensivo en múltiples dispositivos
 
-## 📈 Resultados de Performance
+##  Resultados de Performance
 
 ### Antes vs Después de Optimizaciones
 
@@ -197,7 +197,7 @@ npm start
 | **Requests por búsqueda** | 8-12 | 2-3 | 75% ↓ |
 | **Tamaño de bundle** | 2.1MB | 1.4MB | 33% ↓ |
 
-## 🔮 Próximas Mejoras
+##  Próximas Mejoras
 
 - [ ] Implementación de TypeScript
 - [ ] Testing automatizado (Jest + RTL)
@@ -206,7 +206,7 @@ npm start
 - [ ] Internacionalización (i18n)
 - [ ] Docker containerization
 
-## 👨‍💻 Sobre el Desarrollador
+##  Sobre el Desarrollador
 
 Este proyecto fue desarrollado como demostración de habilidades en:
 
@@ -217,12 +217,12 @@ Este proyecto fue desarrollado como demostración de habilidades en:
 - ✅ **UX/UI** moderno y responsive
 - ✅ **Full-stack development** con Supabase
 
-## 📞 Contacto
+##  Contacto
 
 ¿Interesado en discutir oportunidades? ¡Conectemos!
 
-- 📧 Email: luisexcivier@gmail.com
-- 💼 LinkedIn: [Xavier Ruidiaz](https://www.linkedin.com/in/xavier-ruidiaz-urieta-922175336/?locale=en_US)
+- 📧 Email: luisexcivier2308@gmail.com
+- 💼 LinkedIn: www.linkedin.com/in/xavier-ruidiaz-urieta-922175336
 - 🐙 GitHub: [Xavi2308](https://github.com/Xavi2308)
 
 ---
