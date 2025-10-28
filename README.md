@@ -221,8 +221,8 @@ This project was developed as a demonstration of skills in:
 
 Interested in discussing opportunities? Let's connect!
 
-- 📧 Email: luisexcivier@gmail.com
-- 💼 LinkedIn: [Xavier Ruidiaz](https://www.linkedin.com/in/xavier-ruidiaz-urieta-922175336/?locale=en_US)
+- 📧 Email: luisexcivier2308@gmail.com
+- 💼 LinkedIn: www.linkedin.com/in/xavier-ruidiaz-urieta-922175336
 - 🐙 GitHub: [Xavi2308](https://github.com/Xavi2308)
 
 ---
